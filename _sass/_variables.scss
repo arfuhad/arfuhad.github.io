@@ -1,0 +1,20 @@
+// Dark theme (default)
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #111119;
+  --bg-card: #16161f;
+  --bg-card-hover: #1c1c28;
+  --accent: #3b82f6;
+  --accent-glow: rgba(59, 130, 246, 0.15);
+  --accent-bright: #60a5fa;
+  --cyan: #22d3ee;
+  --green: #34d399;
+  --purple: #a78bfa;
+  --orange: #fb923c;
+  --text-primary: #e8e8f0;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  --border: rgba(255, 255, 255, 0.06);
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "Space Mono", monospace;
+}

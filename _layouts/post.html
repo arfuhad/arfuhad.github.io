@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<article class="section">
+  <div class="container">
+    <a href="{{ '/blog/' | relative_url }}" class="post-back">&larr; Back to Blog</a>
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post-meta">
+        {{ page.date | date: "%B %d, %Y" }}
+        {% if page.tags.size > 0 %}
+          &middot;
+          {% for tag in page.tags %}
+            <span class="skill-tag">{{ tag }}</span>{% unless forloop.last %} {% endunless %}
+          {% endfor %}
+        {% endif %}
+        {% assign words = page.content | number_of_words %}
+        &middot; {{ words | divided_by: 200 | at_least: 1 }} min read
+      </div>
+    </header>
+    <div class="post-content reveal">
+      {{ content }}
+    </div>
+  </div>
+</article>

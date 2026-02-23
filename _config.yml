@@ -1,0 +1,43 @@
+# Site
+title: Abdur Rahman
+description: Lead Flutter Developer – Portfolio & Blog. Building beautiful apps that scale.
+baseurl: ""
+url: "https://arfuhad.github.io"
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+future: true  # set to false in production if you want to hide scheduled posts
+
+# Plugins (GitHub Pages supported)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Author (for SEO and feed)
+author:
+  name: Abdur Rahman
+  email: fuhad1987@gmail.com
+  url: https://arfuhad.github.io
+
+# Google Analytics (set your GA4 Measurement ID; leave empty to disable)
+google_analytics: ""
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - .gitignore
+
+# Sass
+sass:
+  style: compressed

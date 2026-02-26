@@ -1,0 +1,49 @@
+/* ——— Light theme overrides ——— */
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --accent: #2563eb;
+  --accent-glow: rgba(37, 99, 235, 0.1);
+  --accent-bright: #3b82f6;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --border: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] body::before {
+  opacity: 0.02;
+}
+
+[data-theme="light"] .grid-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+}
+
+[data-theme="light"] nav {
+  background: rgba(248, 250, 252, 0.9);
+  border-bottom-color: var(--border);
+}
+
+[data-theme="light"] .hero-terminal,
+[data-theme="light"] .skill-card,
+[data-theme="light"] .project-card,
+[data-theme="light"] .education-card,
+[data-theme="light"] .contact-card,
+[data-theme="light"] .contact-link-item,
+[data-theme="light"] .blog-card,
+[data-theme="light"] .awards-list li {
+  border-color: var(--border);
+}
+
+[data-theme="light"] .orb-1 {
+  background: rgba(37, 99, 235, 0.06);
+}
+[data-theme="light"] .orb-2 {
+  background: rgba(34, 211, 238, 0.04);
+}
+[data-theme="light"] .orb-3 {
+  background: rgba(167, 139, 250, 0.04);
+}

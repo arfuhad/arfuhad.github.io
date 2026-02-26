@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdur Rahman – Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.45;
+      color: #333;
+      padding: 40px 50px;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    @page {
+      size: A4;
+      margin: 15mm 18mm;
+    }
+
+    @media print {
+      body { padding: 0; font-size: 10pt; }
+    }
+
+    /* ——— HEADER ——— */
+    .header { text-align: center; margin-bottom: 20px; }
+    .header h1 {
+      font-size: 22pt;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 4px;
+      letter-spacing: 0.5px;
+    }
+    .header .subtitle {
+      font-size: 11pt;
+      color: #555;
+      margin-bottom: 6px;
+    }
+    .header .contact {
+      font-size: 9.5pt;
+      color: #555;
+      line-height: 1.6;
+    }
+    .header .contact a {
+      color: #555;
+      text-decoration: none;
+    }
+
+    /* ——— SECTIONS ——— */
+    .section { margin-bottom: 16px; }
+    .section h2 {
+      font-size: 13pt;
+      font-weight: 700;
+      color: #2b7de9;
+      text-transform: uppercase;
+      border-bottom: 1.5px solid #2b7de9;
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+      letter-spacing: 0.3px;
+    }
+
+    /* ——— SUMMARY ——— */
+    .summary p {
+      font-size: 10.5pt;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    /* ——— SKILLS ——— */
+    .skills p {
+      margin-bottom: 4px;
+      line-height: 1.5;
+    }
+    .skills strong {
+      color: #222;
+    }
+
+    /* ——— EXPERIENCE ——— */
+    .job { margin-bottom: 14px; }
+    .job:last-child { margin-bottom: 0; }
+    .job-title {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #222;
+    }
+    .job-meta {
+      font-size: 9.5pt;
+      color: #666;
+      margin-bottom: 4px;
+    }
+    .job ul {
+      list-style: none;
+      padding-left: 14px;
+    }
+    .job ul li {
+      position: relative;
+      padding-left: 0;
+      margin-bottom: 3px;
+      line-height: 1.45;
+    }
+    .job ul li::before {
+      content: "- ";
+      position: relative;
+      left: -4px;
+      color: #555;
+    }
+
+    /* ——— PROJECTS ——— */
+    .project { margin-bottom: 12px; }
+    .project:last-child { margin-bottom: 0; }
+    .project-name {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #222;
+    }
+    .project p {
+      margin-bottom: 2px;
+      line-height: 1.45;
+    }
+    .project .tools {
+      font-size: 9.5pt;
+      font-style: italic;
+      color: #666;
+    }
+
+    /* ——— EDUCATION ——— */
+    .edu-title {
+      font-weight: 700;
+      color: #222;
+    }
+    .edu-meta {
+      font-size: 9.5pt;
+      color: #666;
+    }
+
+    /* ——— ACHIEVEMENTS ——— */
+    .achievements ul {
+      list-style: none;
+      padding-left: 14px;
+    }
+    .achievements ul li {
+      margin-bottom: 3px;
+      line-height: 1.45;
+    }
+    .achievements ul li::before {
+      content: "- ";
+      position: relative;
+      left: -4px;
+      color: #555;
+    }
+
+    /* ——— FOOTER ——— */
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 10pt;
+      color: #2b7de9;
+      font-weight: 600;
+    }
+
+    /* ——— PAGE BREAK CONTROL ——— */
+    .job, .project { page-break-inside: avoid; }
+    .section { page-break-inside: avoid; }
+    .section.experience { page-break-inside: auto; }
+    .section.projects { page-break-inside: auto; }
+  </style>
+</head>
+<body>
+
+  <!-- ——— HEADER ——— -->
+  <div class="header">
+    <h1>ABDUR RAHMAN</h1>
+    <div class="subtitle">Lead Flutter Developer | Cross-Platform App Specialist | Firebase &amp; CI/CD Proficient</div>
+    <div class="contact">
+      fuhad1987@gmail.com | (+88) 01687671007 | Remote / Bangladesh<br>
+      GitHub: github.com/arfuhad | LinkedIn: linkedin.com/in/abdur-rahman-fuhad
+    </div>
+  </div>
+
+  <!-- ——— PROFESSIONAL SUMMARY ——— -->
+  <div class="section summary">
+    <h2>Professional Summary</h2>
+    <p>Lead Flutter Developer with 6+ years of experience delivering high-impact cross-platform mobile applications for global audiences. Specialized in Flutter app development, Firebase integration, scalable CI/CD pipelines, and mobile architecture (Bloc, Provider, GetX). Proven track record of leading development teams, mentoring engineers, improving release cycles by 40%, and reducing code redundancy by 30%. Experienced in publishing and maintaining apps on both App Store and Google Play Store. Open to relocation and remote roles worldwide.</p>
+  </div>
+
+  <!-- ——— CORE SKILLS ——— -->
+  <div class="section skills">
+    <h2>Core Skills</h2>
+    <p><strong>Mobile Development:</strong> Flutter, React Native, Dart, iOS, Android, Cross-Platform App Development, Bloc, Provider, GetX, State Management, Multi-Environment Builds (Flavors)</p>
+    <p><strong>Backend &amp; APIs:</strong> .NET Core, Node.js, Django, Go, REST API, GraphQL, MySQL, SQL Server</p>
+    <p><strong>Firebase &amp; Cloud:</strong> Firebase Auth, Crashlytics, Remote Config, Analytics, App Distribution, Cloud Messaging</p>
+    <p><strong>DevOps &amp; Tools:</strong> CI/CD Pipelines, Git, GitHub, Figma, Postman, VS Code, App Store Connect, Google Play Console</p>
+    <p><strong>Languages:</strong> Dart, JavaScript, C#, Python, Java, C++, PHP, Go</p>
+    <p><strong>Leadership:</strong> Team Leadership, Agile/Scrum, Code Review, Mentoring, Client Communication, Problem-solving</p>
+  </div>
+
+  <!-- ——— PROFESSIONAL EXPERIENCE ——— -->
+  <div class="section experience">
+    <h2>Professional Experience</h2>
+
+    <div class="job">
+      <div class="job-title">Team Lead, Mobile App Development</div>
+      <div class="job-meta">Potential Inc. | Remote | September 2023 - Present</div>
+      <ul>
+        <li>Lead a team of Flutter developers building cross-platform mobile applications for global markets</li>
+        <li>Improved release cycle speed by 40% through CI/CD pipeline automation and process optimization</li>
+        <li>Reduced code redundancy by 30% by creating and maintaining reusable internal Flutter packages</li>
+        <li>Ensured performance optimization for low-end Android and iOS devices</li>
+        <li>Expanded cross-platform reach with React Native for specialized WebRTC and real-time features</li>
+        <li>Managed end-to-end app releases on Apple App Store and Google Play Store</li>
+        <li>Conducted code reviews, sprint planning, and team mentoring using Agile methodology</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-title">Flutter Developer</div>
+      <div class="job-meta">Saimon Global Ltd. | Hybrid | October 2021 - August 2023</div>
+      <ul>
+        <li>Developed and scaled the Tryotel mobile app (iOS/Android), the top-performing OTA travel app in Bangladesh</li>
+        <li>Integrated GraphQL APIs, Firebase Auth, Remote Config, and Firebase Analytics</li>
+        <li>Implemented Bloc state management pattern and multi-environment builds using Flavors</li>
+        <li>Maintained consistent app performance and user experience across diverse device specifications</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-title">Software Engineer</div>
+      <div class="job-meta">Edusoft Consultants Ltd. | Hybrid | November 2020 - September 2021</div>
+      <ul>
+        <li>Developed multiple education-related Flutter applications for universities and schools</li>
+        <li>Implemented state management using Provider and GetX patterns</li>
+        <li>Handled full-stack development including frontend (Flutter) and backend (.NET Core, SQL Server)</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-title">Full Stack Developer (Freelancer)</div>
+      <div class="job-meta">Remote | December 2019 - October 2020</div>
+      <ul>
+        <li>Built custom websites and mobile applications for clients using .NET Core, Django, and Flutter</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-title">Intern Software Engineer</div>
+      <div class="job-meta">Acluster BD LLC. | Part-Time | January 2017 - June 2017</div>
+      <ul>
+        <li>Developed microcontroller-based frameworks and LED matrix display solutions using Raspberry Pi</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ——— KEY PROJECTS ——— -->
+  <div class="section projects">
+    <h2>Key Projects</h2>
+
+    <div class="project">
+      <div class="project-name">Clypt - Potential Inc.</div>
+      <p>AI-powered crypto analysis app offering real-time market insights and chart analytics with in-app purchase support on iOS and Android.</p>
+      <div class="tools">Tools: Flutter, Firebase, Dart, REST API, In-App Purchase (iOS &amp; Android)</div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">Tomo - Potential Inc.</div>
+      <p>Location-based community app available in Korea and Japan, connecting users through social groups based on living area.</p>
+      <div class="tools">Tools: Flutter, Firebase, Dart, Social Login (LINE, Apple, Google), REST API, Firebase Analytics, Crashlytics</div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">Tryotel - Saimon Global Ltd.</div>
+      <p>Top-performing OTA travel app in Bangladesh with real-time flight feeds and third-party payment integration.</p>
+      <div class="tools">Tools: Flutter, Firebase, Dart, GraphQL, Firebase Analytics, Crashlytics, 3rd Party Payment Gateway</div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">React Native WebRTC Face Detection - Open Source (npm)</div>
+      <p>ML Kit-powered face detection plugged directly into the WebRTC video pipeline with blink counting, head pose estimation, and React hooks.</p>
+      <div class="tools">Tools: React Native, WebRTC, Google ML Kit, TypeScript, Face Detection, Liveness Checks</div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">Flutter Basic Essentials - Open Source (Pub.dev)</div>
+      <p>Reusable Flutter package to simplify networking, UI error handling, and value-passing utilities for the developer community.</p>
+      <div class="tools">Tools: Dart, Flutter, Published on Pub.dev</div>
+    </div>
+  </div>
+
+  <!-- ——— EDUCATION ——— -->
+  <div class="section">
+    <h2>Education</h2>
+    <div class="edu-title">BSc in Computer Science &amp; Engineering</div>
+    <div class="edu-meta">United International University | 2014 - 2019</div>
+  </div>
+
+  <!-- ——— ACHIEVEMENTS ——— -->
+  <div class="section achievements">
+    <h2>Achievements &amp; Hackathons</h2>
+    <ul>
+      <li>Best Paper Award - IEMIS 2018: "Wavelet and Pyramid Histogram Features for Leaf Detection"</li>
+      <li>Environmental Pollution Framework - Smart city monitoring research project</li>
+      <li>Hackathon Participation: BRACathon, Smart City Hackathon, National Hackathon (2015-2017)</li>
+    </ul>
+  </div>
+
+  <!-- ——— FOOTER ——— -->
+  <div class="footer">
+    Open to relocation to Europe | Eligible for EU Blue Card sponsorship
+  </div>
+
+</body>
+</html>

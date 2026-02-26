@@ -37,6 +37,8 @@ exclude:
   - README.md
   - LICENSE
   - .gitignore
+  - CLAUDE.md
+  - .claude
 
 # Sass
 sass:

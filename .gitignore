@@ -5,3 +5,4 @@ _site/
 Gemfile.lock
 *.log
 .DS_Store
+.claude/

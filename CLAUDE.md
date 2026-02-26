@@ -126,6 +126,14 @@ index.html           # Homepage — hero, skills, experience, projects, educatio
 - Do NOT use Liquid syntax inside fenced code blocks without `{% raw %}`/`{% endraw %}`
 - Do NOT add `google_analytics` value in development
 
+## Resume Pipeline
+- **Source**: `assets/resume-source.html` — standalone HTML with inline CSS (full detailed resume)
+- **PDF**: `assets/resume.pdf` — generated from source via Chrome headless, never edit directly
+- **Web**: `resume/index.html` — simplified version using Jekyll layout
+- **Generate PDF**: `"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu --no-pdf-header-footer --print-to-pdf=assets/resume.pdf file://$PWD/assets/resume-source.html`
+- **Command**: Use `/update-resume` to sync all three files and regenerate the PDF
+- The PDF must stay within 2 pages
+
 ## Deployment
 - **Dev branch**: `dev` (working branch)
 - **Main branch**: `master` (push triggers GitHub Actions → GitHub Pages)

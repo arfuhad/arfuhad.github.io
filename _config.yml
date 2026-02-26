@@ -39,6 +39,7 @@ exclude:
   - .gitignore
   - CLAUDE.md
   - .claude
+  - assets/resume-source.html
 
 # Sass
 sass:

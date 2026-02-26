@@ -6,3 +6,4 @@ Gemfile.lock
 *.log
 .DS_Store
 .claude/
+CLAUDE.md

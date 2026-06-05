@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdur Rahman - Senior Mobile Architect Resume</title>
+  <style>
+    :root {
+      --color-text: #202124;
+      --color-muted: #5f6368;
+      --color-border: #d6d9de;
+      --color-accent: #1f5f99;
+      --space-1: 3px;
+      --space-2: 6px;
+      --space-3: 10px;
+      --space-4: 14px;
+      --space-5: 20px;
+      --font-body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      color: var(--color-text);
+      background: #fff;
+    }
+
+    body {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 38px 50px;
+      font-family: var(--font-body);
+      font-size: 10.25pt;
+      line-height: 1.42;
+    }
+
+    a {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @page {
+      size: A4;
+      margin: 15mm 18mm;
+    }
+
+    @media print {
+      body {
+        max-width: none;
+        padding: 0;
+        font-size: 9.8pt;
+      }
+
+      a {
+        color: var(--color-text);
+      }
+    }
+
+    .resume-header {
+      margin-bottom: var(--space-5);
+      padding-bottom: var(--space-4);
+      border-bottom: 2px solid var(--color-text);
+    }
+
+    .identity {
+      text-align: center;
+      margin-bottom: var(--space-3);
+    }
+
+    h1 {
+      font-size: 23pt;
+      line-height: 1.08;
+      letter-spacing: 0.4px;
+      font-weight: 750;
+    }
+
+    .headline {
+      margin-top: var(--space-1);
+      color: var(--color-muted);
+      font-size: 11pt;
+      font-weight: 600;
+    }
+
+    .contact-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--space-1) var(--space-4);
+      list-style: none;
+      color: var(--color-muted);
+      font-size: 9.4pt;
+    }
+
+    main {
+      display: block;
+    }
+
+    section {
+      margin-bottom: var(--space-4);
+    }
+
+    h2 {
+      margin-bottom: var(--space-3);
+      padding-bottom: var(--space-1);
+      border-bottom: 1px solid var(--color-border);
+      color: var(--color-accent);
+      font-size: 12pt;
+      line-height: 1.2;
+      letter-spacing: 0.35px;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-bottom: var(--space-2);
+    }
+
+    .summary p {
+      color: #34373b;
+      font-size: 10.45pt;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-2) var(--space-4);
+    }
+
+    .skill-group {
+      break-inside: avoid;
+    }
+
+    .skill-group strong {
+      color: var(--color-text);
+    }
+
+    .item {
+      margin-bottom: var(--space-4);
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: var(--space-3);
+      margin-bottom: var(--space-1);
+    }
+
+    h3 {
+      color: var(--color-text);
+      font-size: 10.9pt;
+      line-height: 1.25;
+      font-weight: 700;
+    }
+
+    .meta {
+      color: var(--color-muted);
+      font-size: 9.3pt;
+      white-space: nowrap;
+    }
+
+    .company {
+      color: var(--color-muted);
+      font-size: 9.5pt;
+      margin-bottom: var(--space-2);
+    }
+
+    ul {
+      margin-left: 15px;
+    }
+
+    li {
+      margin-bottom: var(--space-1);
+      padding-left: 1px;
+    }
+
+    .project-title {
+      display: inline;
+      font-weight: 700;
+    }
+
+    .project-links {
+      color: var(--color-muted);
+      font-size: 9.2pt;
+    }
+
+    .tools {
+      color: var(--color-muted);
+      font-size: 9.2pt;
+    }
+
+    .education-line,
+    .note-line {
+      color: var(--color-muted);
+    }
+
+    .footer-note {
+      margin-top: var(--space-5);
+      padding-top: var(--space-3);
+      border-top: 1px solid var(--color-border);
+      color: var(--color-muted);
+      text-align: center;
+      font-size: 9.4pt;
+      font-weight: 600;
+    }
+
+    .experience,
+    .projects {
+      break-inside: auto;
+      page-break-inside: auto;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 28px 22px;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .item-header {
+        display: block;
+      }
+
+      .meta {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="resume-header">
+    <div class="identity">
+      <h1>Abdur Rahman</h1>
+      <p class="headline">Senior Mobile Architect | Full-Stack Engineering Lead | Flutter &amp; React Native Systems</p>
+    </div>
+    <ul class="contact-list" aria-label="Contact information">
+      <li><a href="mailto:fuhad1987@gmail.com">fuhad1987@gmail.com</a></li>
+      <li><a href="tel:+8801687671007">+88 01687671007</a></li>
+      <li>Remote / Bangladesh</li>
+      <li><a href="https://github.com/arfuhad">github.com/arfuhad</a></li>
+      <li><a href="https://www.linkedin.com/in/abdur-rahman-fuhad">linkedin.com/in/abdur-rahman-fuhad</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="summary" aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Professional Summary</h2>
+      <p>Senior mobile architect and full-stack engineering lead with 6+ years delivering production iOS, Android, backend, and dashboard systems for remote international teams. Led developers, shaped scalable architecture, improved release speed by 40%, reduced duplicated code by 30%, and shipped products across travel, parking, social, and WebRTC.</p>
+    </section>
+
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Core Skills</h2>
+      <div class="skills-grid">
+        <p class="skill-group"><strong>Mobile Development:</strong> Flutter, Dart, React Native, iOS, Android, Bloc, Provider, GetX, app flavors</p>
+        <p class="skill-group"><strong>Backend Development:</strong> Node.js, NestJS, TypeORM, BullMQ, .NET Core, Django, Go, REST APIs, GraphQL, WebRTC, Socket.io</p>
+        <p class="skill-group"><strong>Cloud &amp; Firebase:</strong> Firebase Auth, Analytics, Crashlytics, Remote Config, Cloud Messaging, App Distribution, AWS S3</p>
+        <p class="skill-group"><strong>Databases:</strong> PostgreSQL, PostGIS, MySQL, SQL Server, Redis</p>
+        <p class="skill-group"><strong>DevOps &amp; CI/CD:</strong> Docker, PM2, GitHub, CI/CD pipelines, automated releases, environment management</p>
+        <p class="skill-group"><strong>Architecture &amp; Leadership:</strong> mobile architecture, code review, mentoring, Agile delivery, technical planning</p>
+      </div>
+    </section>
+
+    <section class="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Professional Experience</h2>
+
+      <article class="item">
+        <div class="item-header">
+          <h3>Team Lead, Full-Stack Mobile Engineering</h3>
+          <div class="meta">September 2023 - Present</div>
+        </div>
+        <p class="company">Potential Inc. | Remote</p>
+        <ul>
+          <li>Lead full-stack delivery for mobile apps, NestJS backends, and React dashboards across consumer and internal products.</li>
+          <li>Built Blink end to end: React Native/Expo app, React Router admin dashboard, NestJS API, PostgreSQL/PostGIS, Redis, BullMQ, Socket.io, and WebRTC/TURN infrastructure.</li>
+          <li>Delivered Blink features across auth, matchmaking, blink detection, chat, wallets, gifts, notifications, moderation, content management, health checks, and background jobs.</li>
+          <li>Created reusable Flutter packages and shared patterns, reducing duplicated implementation by 30%.</li>
+          <li>Built CI/CD and release automation, cutting release cycle time by 40% for App Store and Google Play deployments.</li>
+          <li>Set architecture standards for state management, app flavors, Firebase observability, and performance.</li>
+          <li>Run code reviews, sprint planning, mentoring, and risk reviews across Flutter, React Native, and WebRTC.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="item-header">
+          <h3>Flutter Developer</h3>
+          <div class="meta">October 2021 - August 2023</div>
+        </div>
+        <p class="company">Saimon Global Ltd. | Hybrid</p>
+        <ul>
+          <li>Delivered Tryotel, a leading Bangladesh OTA app for flight search, booking, payments, and live travel data.</li>
+          <li>Implemented GraphQL, Bloc, Firebase Auth, Remote Config, Analytics, and Crashlytics for reliability and observability.</li>
+          <li>Introduced app flavors and cleaner release workflows across development, staging, and production builds.</li>
+          <li>Worked with product, QA, backend, and business teams under changing partner requirements.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="item-header">
+          <h3>Software Engineer</h3>
+          <div class="meta">November 2020 - September 2021</div>
+        </div>
+        <p class="company">Edusoft Consultants Ltd. | Hybrid</p>
+        <ul>
+          <li>Built university and school platforms across Flutter mobile, .NET Core APIs, and SQL Server databases.</li>
+          <li>Used Provider and GetX to standardize state management across multiple academic applications.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="item-header">
+          <h3>Full-Stack Developer, Freelance</h3>
+          <div class="meta">December 2019 - October 2020</div>
+        </div>
+        <p class="company">Remote</p>
+        <ul>
+          <li>Delivered client websites, APIs, and Flutter apps using .NET Core, Django, SQL, and cross-platform tooling.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Flagship Projects</h2>
+
+      <article class="item">
+        <p><span class="project-title">Blink - Full-Stack Real-Time Social Gaming Platform, Potential Inc.</span></p>
+        <p>Built the backend, dashboard, and app for a WebRTC blink-detection game with matchmaking, chat, social profiles, wallet/economy, gifts, reports, FCM notifications, content management, admin operations, and queue-based background processing.</p>
+        <p class="tools">Technologies: React Native, Expo, React Router, NestJS, PostgreSQL/PostGIS, Redis, BullMQ, Socket.io, WebRTC, Firebase, Docker</p>
+      </article>
+
+      <article class="item">
+        <p><span class="project-title">Park Park (팍팍) - Korean Smart Parking Marketplace, Potential Inc.</span> <span class="project-links"><a href="https://apps.apple.com/us/app/%ED%8C%8D%ED%8C%8D-parkpark/id6755990462">iOS</a> | <a href="https://play.google.com/store/apps/details?id=com.parkpark.app">Android</a></span></p>
+        <p>Led Flutter delivery for a mobility/payment marketplace with Naver Maps, shared parking facilities, car-number payment flows, Toss/BrandPay billing, saved cards, rewards/refunds, FCM notifications, deep links, and background navigation services.</p>
+        <p class="tools">Technologies: Flutter, Dart, Bloc/Cubit, GetIt, Naver Map, Toss Payments/BrandPay, Firebase, FCM, Socket.io, GoRouter, Deep Links, Shorebird</p>
+      </article>
+
+      <article class="item">
+        <p><span class="project-title">Tryotel - OTA Travel Booking App, Saimon Global Ltd.</span> <span class="project-links"><a href="https://apps.apple.com/us/app/tryotel-book-flights/id1547610880">iOS</a> | <a href="https://play.google.com/store/apps/details?id=com.saimongroup.tryotelapp">Android</a></span></p>
+        <p>Built flight search, booking, payment, and travel-data workflows with Bloc architecture, Firebase observability, GraphQL, and release flavors.</p>
+        <p class="tools">Technologies: Flutter, Dart, GraphQL, Firebase Analytics, Crashlytics, payment gateway integration</p>
+      </article>
+
+      <article class="item">
+        <p><span class="project-title">Tomo - Location-Based Community App, Potential Inc.</span> <span class="project-links"><a href="https://apps.apple.com/us/app/tomo-%E5%8F%8B/id6737231798">iOS</a> | <a href="https://play.google.com/store/apps/details?id=com.potential.tomo">Android</a></span></p>
+        <p>Delivered a Korea and Japan social platform connecting users by residential area, with social login, Firebase telemetry, and REST APIs.</p>
+        <p class="tools">Technologies: Flutter, Firebase, REST APIs, LINE login, Apple login, Google login, Crashlytics</p>
+      </article>
+
+      <article class="item">
+        <p><span class="project-title">React Native WebRTC Face Detection - Open Source npm Package</span></p>
+        <p>Created an ML Kit package adding face detection, blink counting, head pose estimation, hooks, and liveness checks to WebRTC workflows.</p>
+        <p class="tools">Technologies: React Native, TypeScript, WebRTC, Google ML Kit, face detection, liveness checks</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <p><strong>BSc in Computer Science &amp; Engineering</strong></p>
+      <p class="education-line">United International University | 2014 - 2019</p>
+    </section>
+
+    <section aria-labelledby="achievements-heading">
+      <h2 id="achievements-heading">Selected Achievements</h2>
+      <ul>
+        <li>Best Paper Award, IEMIS 2018: Wavelet and Pyramid Histogram Features for Leaf Detection.</li>
+        <li>Published Flutter Basic Essentials on Pub.dev for networking, UI error handling, and utilities.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer-note">
+    Open to remote-first European teams, relocation opportunities, and EU Blue Card sponsorship.
+  </footer>
+</body>
+</html>
